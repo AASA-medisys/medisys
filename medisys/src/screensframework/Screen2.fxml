@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="screensframework.Screen2Controller">
+   <children>
+      <HBox alignment="CENTER_LEFT" layoutX="985.0" layoutY="41.0" spacing="10.0" AnchorPane.rightAnchor="62.0" AnchorPane.topAnchor="41.0">
+         <children>
+            <Label layoutX="985.0" layoutY="46.0" text="Welcome back" />
+            <Label layoutX="1075.0" layoutY="46.0" text="Daniel Chan!" />
+            <Button fx:id="closeButton" layoutX="1196.0" layoutY="41.0" mnemonicParsing="false" onAction="#closeButtonAction" text="Logout" AnchorPane.rightAnchor="22.0" AnchorPane.topAnchor="41.0" />
+         </children>
+      </HBox>
+      <AnchorPane layoutY="100.0" prefHeight="694.0" prefWidth="170.0">
+         <children>
+            <VBox alignment="TOP_CENTER" layoutX="55.0" layoutY="31.0" prefHeight="694.0" prefWidth="170.0" spacing="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Button layoutX="55.0" layoutY="72.0" mnemonicParsing="false" text="Calendar" />
+                  <Button layoutX="55.0" layoutY="120.0" mnemonicParsing="false" text="Patient" />
+                  <Button layoutX="55.0" layoutY="174.0" mnemonicParsing="false" text="Prescription" />
+                  <Button layoutX="55.0" layoutY="229.0" mnemonicParsing="false" onAction="#goToScreen5" text="Billing" />
+               </children>
+               <padding>
+                  <Insets top="100.0" />
+               </padding>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="170.0" layoutY="100.0" prefHeight="694.0" prefWidth="1112.0" AnchorPane.bottomAnchor="6.0" AnchorPane.leftAnchor="170.0" AnchorPane.rightAnchor="-2.0" AnchorPane.topAnchor="100.0">
+         <children>
+            <SplitPane layoutX="74.0" layoutY="105.0" orientation="VERTICAL" prefHeight="694.0" prefWidth="1112.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="486.0" prefWidth="1110.0">
+                     <children>
+                        <TableView layoutY="6.0" prefHeight="399.0" prefWidth="1110.0" AnchorPane.bottomAnchor="293.0" AnchorPane.rightAnchor="0.0">
+                          <columns>
+                            <TableColumn prefWidth="75.0" text="C1" />
+                            <TableColumn prefWidth="75.0" text="C2" />
+                          </columns>
+                        </TableView>
+                        <HBox layoutX="46.0" layoutY="564.0" spacing="20.0">
+                           <children>
+                              <Button layoutX="46.0" layoutY="564.0" mnemonicParsing="false" text="Add Patient" />
+                              <TextField layoutX="182.0" layoutY="564.0" text="First Name" />
+                              <TextField layoutX="364.0" layoutY="564.0" text="Surname" />
+                           </children>
+                        </HBox>
+                     </children></AnchorPane>
+              </items>
+            </SplitPane>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="99.0" fitWidth="170.0">
+         <image>
+            <Image url="@../image.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="181.0" layoutY="32.0" text="PATIENT">
+         <font>
+            <Font size="37.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

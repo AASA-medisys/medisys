@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="details" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="screensframework.Screen5Controller">
+   <children>
+      <SplitPane dividerPositions="0.19298245614035087" layoutX="341.0" layoutY="140.0" prefHeight="600.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <VBox layoutY="87.0" prefHeight="57.0" prefWidth="150.0" AnchorPane.bottomAnchor="454.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="87.0">
+                     <children>
+                        <Button layoutX="45.0" layoutY="49.0" mnemonicParsing="false" onAction="#goToScreen2" text="Patient" />
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <SplitPane dividerPositions="0.5" layoutX="106.0" layoutY="170.0" orientation="VERTICAL" prefHeight="598.0" prefWidth="640.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                           <children>
+                              <TableView layoutX="129.0" layoutY="-50.0" prefHeight="99.0" prefWidth="638.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <columns>
+                                  <TableColumn prefWidth="75.0" text="C1" />
+                                  <TableColumn prefWidth="75.0" text="C2" />
+                                </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                           <children>
+                              <HBox layoutX="28.0" layoutY="25.0" minWidth="-Infinity" AnchorPane.rightAnchor="24.0">
+                                 <children>
+                                    <HBox alignment="CENTER_LEFT" layoutX="28.0" layoutY="26.0">
+                                       <children>
+                                          <Hyperlink layoutX="28.0" layoutY="26.0" text="Project" />
+                                          <Label layoutX="113.0" layoutY="30.0" text="medisys" />
+                                          <Hyperlink layoutX="184.0" layoutY="26.0" text="Bug" />
+                                       </children>
+                                    </HBox>
+                                    <TextField layoutX="182.0" layoutY="25.0" prefHeight="26.0" prefWidth="447.0" HBox.hgrow="ALWAYS" />
+                                 </children>
+                              </HBox>
+                              <Label layoutX="35.0" layoutY="60.0" text="Notes" />
+                              <TextArea layoutX="28.0" layoutY="85.0" prefHeight="105.0" prefWidth="586.0" AnchorPane.bottomAnchor="104.0" AnchorPane.leftAnchor="28.0" AnchorPane.rightAnchor="24.0" AnchorPane.topAnchor="85.0" />
+                              <DatePicker fx:id="datePicker" layoutX="29.0" layoutY="204.0" onAction="#selectDate" prefHeight="26.0" prefWidth="106.0" />
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
