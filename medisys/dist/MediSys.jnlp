@@ -11,8 +11,8 @@
   </resources>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="MediSys.jar" size="41179" download="eager" />
-    <jar href="lib/ojdbc7.jar" size="3397734" download="eager" />
+    <jar href="MediSys.jar" size="31971" download="eager" />
+    <jar href="lib/ojdbc7.jar" size="3534607" download="eager" />
   </resources>
   <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="MediSys" >
     <param name="requiredFXVersion" value="2.2+"/>

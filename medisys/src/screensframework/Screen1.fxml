@@ -38,7 +38,7 @@
       </HBox>
       <ImageView fitHeight="172.0" fitWidth="200.0" layoutX="540.0" layoutY="124.0">
          <image>
-            <Image url="@../../../aasa-medisys/medisys/src/image.png" />
+            <Image url="@../Images/medisys%20logo.png" />
          </image>
       </ImageView>
   </children>
